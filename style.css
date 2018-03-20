@@ -1,1 +1,130 @@
- 
+* {
+	margin: 0;
+	padding: 0;
+ 	overflow : hidden;
+	white-space: nowrap;
+} 
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	background-image: url("./images/patterns.png");
+	background-position: center;
+	height: 100%;
+	margin: 5px;
+}
+
+#contentWrapper {
+	position: relative;
+	margin: 5px auto;
+	height: 100%;
+	text-align: center;
+	width: 900px;
+}
+
+#title {
+	position: relative;
+	margin: 220px auto 0;
+	font: 4em Verdana, sans-serif;
+}
+
+#clock {
+	position: relative;
+	display: inline-block;
+	background-color: #007935;
+	height: 300px;
+	width: 95%;
+	border-radius: 5% / 15%;
+	border: 5px solid #191919;
+}
+
+#clockHighlight {
+	top: 50%;
+	transform: translateY(-50%);
+
+	position: relative;
+
+	display: inline-block;
+	background-color: #62A70F;
+	height: 75%;
+	width: 75%;
+	border-radius: 5% / 15%;
+}
+
+#clockText {
+	position: relative;
+
+	top: 50%;
+	transform: translateY(-50%);
+	color: #E0E0E0;
+	font: 10em Verdana, sans-serif;
+}
+
+#settings {
+	display: flex;
+	margin: 10px auto;
+}
+
+#settings > div {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	
+	background-color: #FFD200;
+	margin: 10px auto;
+	height: 150px;
+	width: 42.5%;
+	border-radius: 5% / 10%;
+	border: 5px solid #191919;
+}
+
+#settings > div > p {
+	position: relative;
+	font: 3em Verdana, sans-serif;
+}
+
+#settings > div > button {
+	background-color: #FFD200;
+	border-radius: 5% / 10%;
+	border: 2px solid #FFD200;
+}
+
+#settings > div > button:active {
+	transition-duration: 0.075s;;
+	transform: translate(0, 2px);
+	transition-timing-function: ease-out;
+	box-shadow: 2px 2px 8px #DBAA00;
+}
+
+#settings > div > .down {
+	background: transparent url("./images/down-arrow.png") no-repeat center top;
+}
+
+
+#settings > div > .up {
+	background: transparent url("./images/up-arrow.png") no-repeat center top;
+}
+
+#settings > div > .text {
+	grid-column: 2 / 3;
+	grid-row: 1 / 3;
+}
+
+#settings > div > .down {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+}
+
+#settings > div > .length {
+	grid-column: 2 / 3;
+	grid-row: 2 / 3;
+}
+
+#settings > div > .up {
+	grid-column: 3 / 4;
+	grid-row: 2 / 3;
+}
