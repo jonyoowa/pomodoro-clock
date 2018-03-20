@@ -97,16 +97,23 @@ body {
 	transition-duration: 0.075s;;
 	transform: translate(0, 2px);
 	transition-timing-function: ease-out;
-	box-shadow: 2px 2px 8px #DBAA00;
 }
 
 #settings > div > .down {
 	background: transparent url("./images/down-arrow.png") no-repeat center top;
 }
 
+#settings > div > .down:active {
+	box-shadow: 2px -2px 8px #DBAA00;
+}
+
 
 #settings > div > .up {
 	background: transparent url("./images/up-arrow.png") no-repeat center top;
+}
+
+#settings > div > .up:active {
+	box-shadow: -2px -2px 8px #DBAA00;
 }
 
 #settings > div > .text {
