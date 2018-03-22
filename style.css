@@ -44,9 +44,7 @@ body {
 #clockHighlight {
 	top: 50%;
 	transform: translateY(-50%);
-
 	position: relative;
-
 	display: inline-block;
 	background-color: #62A70F;
 	height: 75%;
@@ -56,7 +54,6 @@ body {
 
 #clockText {
 	position: relative;
-
 	top: 50%;
 	transform: translateY(-50%);
 	color: #E0E0E0;
@@ -106,7 +103,6 @@ body {
 #settings > div > .down:active {
 	box-shadow: 2px -2px 8px #DBAA00;
 }
-
 
 #settings > div > .up {
 	background: transparent url("./images/up-arrow.png") no-repeat center top;
