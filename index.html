@@ -8,28 +8,33 @@
 		<div id="contentWrapper">
 			<h1 id="title">pomodoro</h1>
 			<div id="clock">
+				<div id="controlButtonContainer">
+					<button id="play" class="controlButton"></button>
+					<button id="pause" class="controlButton"></button>
+					<button id="stop" class="controlButton"></button>
+					<button id="restart" class="controlButton"></button>
+				</div>
+
 				<div id="clockHighlight">
 					<p id="clockText">00:00</p>
 				</div>
-
-				<!-- Add buttons here with JS -->
-
 			</div>
 			<div id="settings">
 				<div id="setSession">
-					<p class="text">Session</p>
-					<button class="down"></button>
-					<p class="length">25</p>
-					<button class="up"></button>
+					<p id="sessionText" class="text">Session</p>
+					<button id="sessionDown" class="down"></button>
+					<p id="sessionLength" class="length">25</p>
+					<button id="sessionUp" class="up"></button>
 				</div>
 				<div id="setBreak">
-					<p class="text">Break</p>
-					<button class="down"></button>
-					<p class="length">5</p>
-					<button class="up"></button>
+					<p id="breakText" class="text">Break</p>
+					<button id="breakDown" class="down"></button>
+					<p id="breakLength" class="length">5</p>
+					<button id="breakUp" class="up"></button>
 				</div>
 			</div>
 		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="./main.js" async></script>
 	</body>
 </html> 

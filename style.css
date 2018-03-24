@@ -19,26 +19,86 @@ body {
 
 #contentWrapper {
 	position: relative;
-	margin: 5px auto;
+	margin: 150px auto;
 	height: 100%;
 	text-align: center;
-	width: 900px;
+	width: 1200px;
+}
+
+#contentWrapper > div, #contentWrapper > h1 {
+	margin: 10px auto;
 }
 
 #title {
 	position: relative;
-	margin: 220px auto 0;
 	font: 4em Verdana, sans-serif;
 }
 
 #clock {
 	position: relative;
-	display: inline-block;
 	background-color: #007935;
 	height: 300px;
-	width: 95%;
+	width: 90%;
 	border-radius: 5% / 15%;
 	border: 5px solid #191919;
+}
+
+#controlButtonContainer {
+	display: inline-grid;
+	position: relative;
+	
+	bottom: 90px;
+	right: 15px; 
+
+	width: 200px;
+	height: 200px;
+
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas: "play pause"
+						 "stop restart";
+}
+
+.controlButton {
+	background-color: #62A70F;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 65%;
+
+	position: relative;
+	margin: auto;
+	height: 75px;
+	width: 75px;
+
+	border-radius: 50%;
+	border: none;
+	outline: none;
+}
+
+.controlButton:active {
+	transition-duration: 0.075s;;
+	transition-timing-function: ease-out;
+	border: 2px solid #154733;
+}
+
+#play {
+	grid-area: play;
+	background-image: url("./images/play.png");
+}
+
+#pause {
+	grid-area: pause;
+	background-image: url("./images/pause.png");
+}
+
+#stop {
+	grid-area: stop;
+	background-image: url("./images/stop.png");
+}
+
+#restart {
+	grid-area: restart;
+	background-image: url("./images/restart.png");
 }
 
 #clockHighlight {
@@ -62,7 +122,6 @@ body {
 
 #settings {
 	display: flex;
-	margin: 10px auto;
 }
 
 #settings > div {
@@ -74,7 +133,7 @@ body {
 	background-color: #FFD200;
 	margin: 10px auto;
 	height: 150px;
-	width: 42.5%;
+	width: 40%;
 	border-radius: 5% / 10%;
 	border: 5px solid #191919;
 }
@@ -86,8 +145,9 @@ body {
 
 #settings > div > button {
 	background-color: #FFD200;
-	border-radius: 5% / 10%;
 	border: 2px solid #FFD200;
+	border-radius: 5% / 10%;
+	outline-color: #191919;
 }
 
 #settings > div > button:active {
