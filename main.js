@@ -16,10 +16,8 @@ $(document).ready(function() {
 	const controlButtons = document.getElementsByClassName("controlButton");
 
 	// Stores the session and break length set by user
-	// let sessionLength = INITIAL_SESSION_LENGTH;
-	// let breakLength = INITIAL_BREAK_LENGTH; 
-	let sessionLength = 25;
-	let breakLength = 5; 
+	let sessionLength = INITIAL_SESSION_LENGTH;
+	let breakLength = INITIAL_BREAK_LENGTH; 
 
 	// Save clock status information 
 	let currentState = clockState.stopped;
